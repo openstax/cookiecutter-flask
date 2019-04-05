@@ -1,5 +1,6 @@
 from flask import Flask
 
+from {{ cookiecutter.project_name }}.core import db
 from {{ cookiecutter.project_name }}.home.views import home
 
 
@@ -24,7 +25,11 @@ def create_app(package_name, package_path, settings_override=None):
     if settings_override:
         app.config.from_object(settings_override)
 
-    app.register_blueprint(home)
+    # Attach Flask Extensions
+    db.init_app(app)
+
+    # Register Blueprints
+    app.register_blueprint(home, url_prefix="/")
 
 
     return app

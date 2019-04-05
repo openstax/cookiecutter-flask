@@ -1,8 +1,4 @@
 import click
-from datetime import datetime
-
-from flask import current_app
-from flask_security import utils
 
 from {{cookiecutter.project_name}} import create_app
 from {{cookiecutter.project_name}} import db
