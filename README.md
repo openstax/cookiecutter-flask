@@ -1,7 +1,7 @@
 # Flask Cookiecutter
 
 Use this cookiecutter to create a Flask project structure that includes the use
-of the [application factorypattern][app-factory] and [blueprints][blueprints].
+of the [application factory pattern][app-factory] and [blueprints][blueprints].
 
 ## Getting Started
 
@@ -26,4 +26,8 @@ Activate the virtualenv
 Run the flask web server
 
     $ flask run
+
+[app-factory]: http://flask.pocoo.org/docs/1.0/patterns/appfactories/
+[blueprints]: http://flask.pocoo.org/docs/1.0/blueprints/
+
 
