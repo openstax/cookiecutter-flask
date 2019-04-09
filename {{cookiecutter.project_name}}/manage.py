@@ -6,7 +6,6 @@ from {{cookiecutter.project_name}} import db
 app = create_app()
 
 
-
 @app.cli.command()
 @click.confirmation_option(prompt='This will erase everything in the database. Do you want to continue?')
 def reset_db():
